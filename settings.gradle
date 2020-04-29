@@ -1,0 +1,2 @@
+rootProject.name='NgasuhApp'
+include ':app'
