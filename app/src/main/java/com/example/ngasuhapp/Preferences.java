@@ -2,6 +2,7 @@ package com.example.ngasuhapp;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import com.example.ngasuhapp.UserModel;
 
 public class Preferences {
 
@@ -18,14 +19,19 @@ public class Preferences {
         this.context = context;
     }
 
-    public static void setUserPreferences(Context context, activity_home userModel) {
+    public static void setUserPreferences(Context context, UserModel userModel) {
         SharedPreferences preferences = context.getSharedPreferences(PREF_SESSION, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
 
-        editor.putString(REGISTER_USERNAME, userModel, getUsername());
-        editor.putString(REGISTER_PASSWORD, userModel, getPassword());
-        editor.putString(REGISTER_PHONE, userModel, getPhone());
+        editor.putString(REGISTER_USERNAME, userModel.getUsername());
+        editor.putString(REGISTER_PASSWORD, userModel.getPassword());
+        editor.putString(REGISTER_PHONE, userModel.getPhone());
         editor.apply();
+    }
+
+    public static String getRegisteredUser(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences(PREF_SESSION, Context.MODE_PRIVATE);
+        return preferences.getString(REGISTER_USERNAME, UtilStatic.DEFAULT_STRING);
     }
 
     public static String getRegisteredPassword(Context context) {

@@ -15,7 +15,7 @@ public class activity_home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_main);
 
         declareView();
         txtKeluar.setOnClickListener(new View.OnClickListener() {
@@ -25,7 +25,7 @@ public class activity_home extends AppCompatActivity {
                 Preferences.setLogout(getBaseContext());
 
                 //Pindah Halaman ke Login
-                startActivity(new Intent(getBaseContext(), LoginActivity.class));
+                startActivity(new Intent(getBaseContext(), activity_login.class));
                 finish();
             }
         });
@@ -33,8 +33,8 @@ public class activity_home extends AppCompatActivity {
     }
 
     private void declareView() {
-        txtKeluar = findViewById(R.id.txt_logout);
-        txtName = findViewById(R.id.txtName);
+        txtKeluar = findViewById(R.id.out);
+        txtName = findViewById(R.id.namaa);
 
         txtName.setText(Preferences.getRegisteredUser(getBaseContext()));
     }
