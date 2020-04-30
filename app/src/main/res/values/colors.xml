@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="biru">#3498db</color>
+    <color name="birutua">#2980b9</color>
+    <color name="ijo_login">#96eb64</color>
+    <color name="ijopress">#32af5a</color>
+
+    <color name="putih">#FFFFFF</color>
+    <color name="kuning_login">#ffc800</color>
+    <color name="oren">#fa6432</color>
+
 </resources>
