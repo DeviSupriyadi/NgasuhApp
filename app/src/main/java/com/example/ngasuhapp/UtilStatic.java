@@ -1,4 +1,4 @@
-package latihansharedpreferences.utils;
+package com.example.ngasuhapp;
 
 public interface UtilStatic {
 

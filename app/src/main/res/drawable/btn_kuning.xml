@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="@color/kuning_login"/>
+            <corners
+                android:topRightRadius="@dimen/dm0"
+                android:bottomRightRadius="@dimen/dm0"
+                android:topLeftRadius="@dimen/dm20"
+                android:bottomLeftRadius="@dimen/dm20"/>
+        </shape>
+    </item>
+    <item>
+        <selector>
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="@color/oren"/>
+                    <corners
+                        android:topRightRadius="@dimen/dm0"
+                        android:bottomRightRadius="@dimen/dm0"
+                        android:topLeftRadius="@dimen/dm20"
+                        android:bottomLeftRadius="@dimen/dm20"/>
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/kuning_login"/>
+                    <corners
+                        android:bottomRightRadius="@dimen/dm0"
+                        android:topRightRadius="@dimen/dm0"
+                        android:bottomLeftRadius="@dimen/dm20"
+                        android:topLeftRadius="@dimen/dm20"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+
+</layer-list>

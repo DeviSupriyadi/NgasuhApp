@@ -1,18 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/atase2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserModel">
+    android:layout_centerInParent="true"
+    android:background="@color/biru"
+    android:orientation="vertical"
+    android:padding="@dimen/dm24"
+    tools:context=".activity_home">
 
-    <TextView
+    <ImageView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/ic_child_friendly"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginStart="@dimen/dm12"
+        android:layout_marginLeft="@dimen/dm12"
+        android:layout_toRightOf="@+id/logo"
+        android:text="@string/judul"
+        android:textSize="@dimen/dm20"
+        android:textColor="@color/putih"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/siap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm5"
+        android:layout_marginStart="@dimen/dm12"
+        android:layout_marginLeft="@dimen/dm12"
+        android:layout_toRightOf="@id/logo"
+        android:layout_below="@id/judul"
+        android:text="@string/siap"
+        android:textSize="@dimen/dm14"
+        android:textColor="@color/putih"/>
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/siap"
+        android:layout_marginStart="@dimen/dm50"
+        android:layout_marginLeft="@dimen/dm50"
+        android:layout_marginTop="@dimen/dm30"
+        android:layout_marginEnd="@dimen/dm50"
+        android:layout_marginRight="@dimen/dm50"
+        android:gravity="center"
+        android:text="@string/hi"
+        android:textColor="@color/putih"
+        android:textSize="@dimen/font16"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/namaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hi"
+        android:layout_marginStart="@dimen/dm50"
+        android:layout_marginLeft="@dimen/dm50"
+        android:layout_marginEnd="@dimen/dm50"
+        android:layout_marginRight="@dimen/dm50"
+        android:gravity="center"
+        android:text="@string/dev"
+        android:textColor="@color/putih"
+        android:textSize="@dimen/font16"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_below="@id/namaa"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm3"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dm120"
+        android:layout_marginLeft="@dimen/dm120"
+        android:layout_marginTop="@dimen/dm10"
+        android:layout_marginEnd="@dimen/dm120"
+        android:layout_marginRight="@dimen/dm120"
+        android:background="@color/putih"/>
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm40"
+        android:layout_marginStart="@dimen/dm50"
+        android:layout_marginLeft="@dimen/dm50"
+        android:layout_marginTop="@dimen/dm20"
+        android:layout_marginEnd="@dimen/dm50"
+        android:layout_marginRight="@dimen/dm50"
+        android:background="@drawable/btn_biruw"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="@string/out"
+        android:textColor="@color/putih"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

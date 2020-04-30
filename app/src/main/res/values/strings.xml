@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">NgasuhApp</string>
+
+    <string name="judul">NGASUH</string>
+    <string name="siap">Siap Menjadi Orangtua Muda</string>
+    <string name="login">Login</string>
+    <string name="uname">Username</string>
+    <string name="pw">Password</string>
+    <string name="hi">Hallo</string>
+    <string name="dev">Devi Tiana Octaviani S</string>
+    <string name="conf">Confirm Password</string>
+    <string name="phone">Nomor Telepon</string>
+    <string name="forget">Lupa password?</string>
+    <string name="in">Masuk</string>
+    <string name="regis">Belum punya akun? Yuk Daftar</string>
+    <string name="daftar">Daftar</string>
+    <string name="out">Logout</string>
 </resources>

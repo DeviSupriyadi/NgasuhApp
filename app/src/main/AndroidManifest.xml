@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity_login" />
-        <activity android:name=".UserModel">
+        <activity android:name=".activity_home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

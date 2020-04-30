@@ -1,9 +1,7 @@
-package latihansharedpreferences.utils;
+package com.example.ngasuhapp;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-
-import com.example.ngasuhapp.UserModel;
 
 public class Preferences {
 
@@ -20,7 +18,7 @@ public class Preferences {
         this.context = context;
     }
 
-    public static void setUserPreferences(Context context, UserModel userModel) {
+    public static void setUserPreferences(Context context, activity_home userModel) {
         SharedPreferences preferences = context.getSharedPreferences(PREF_SESSION, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
 

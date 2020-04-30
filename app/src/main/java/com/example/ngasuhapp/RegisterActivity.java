@@ -1,14 +1,10 @@
-package latihansharedpreference;
+package com.example.ngasuhapp;
 
 import android.content.Intent;
 
-import com.example.ngasuhapp.UserModel;
-
-import latihansharedpreferences.utils.Preferences;
-
 public class RegisterActivity {
 
-    UserModel userModel = new UserModel();
+    activity_home userModel = new activity_home();
     userModel.setUsername(userName);
     userModel.setPassword(password);
     userModel.setPhone(phoneNumber);

@@ -1,41 +1,24 @@
 package com.example.ngasuhapp;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.view.View;
 
-import android.os.Bundle;
+public class UserModel {
 
-public class UserModel extends AppCompatActivity {
+    private void declareView() {
+        txtKeluar = findViewById(R.id.txt_Logout);
+        txtName = findViewById(R.id.txtName);
 
-    private String username;
-    private String password;
-    private String phone;
-
-    public String getUsername() {
-
-        return username;
+        txtName.setText(Preferences.getRegisteredUser(getBaseContext()));
     }
 
-    public void setUsername(String username) {
+    txtKeluar.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+        Preferences.setLogout(getBaseContext());
 
-        this.username = username;
-    }
-
-    public String getPassword() {
-
-        return password;
-    }
-
-    public void setPassword(String password) {
-
-        this.password = password;
-    }
-
-    public String getPhone() {
-
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
+        startActivity(new Intent(getBaseContext(), LoginActivity.class));
+        finish();
+        }
+    });
 }
