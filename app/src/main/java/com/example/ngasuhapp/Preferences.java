@@ -1,5 +1,12 @@
 package com.example.ngasuhapp;
 
+/* Tanggal Pengerjaan : 29-30 April 2020
+    Deksripsi         : Bikin Preferences
+    Nama              : Devi Tiana Octaviani
+    NIM               : 10117181
+    Kelas             : IF-5
+ */
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import com.example.ngasuhapp.UserModel;

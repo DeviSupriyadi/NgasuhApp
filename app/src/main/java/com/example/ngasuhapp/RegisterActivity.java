@@ -1,7 +1,13 @@
 package com.example.ngasuhapp;
 
-import androidx.appcompat.app.AppCompatActivity;
+/* Tanggal Pengerjaan : 29-30 April 2020
+    Deksripsi         : Bikin Registrasi dan tampilan
+    Nama              : Devi Tiana Octaviani
+    NIM               : 10117181
+    Kelas             : IF-5
+ */
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;

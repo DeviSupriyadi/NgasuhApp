@@ -1,5 +1,12 @@
 package com.example.ngasuhapp;
 
+/* Tanggal Pengerjaan : 29 April 2020
+    Deksripsi         : Bikin UserModel
+    Nama              : Devi Tiana Octaviani
+    NIM               : 10117181
+    Kelas             : IF-5
+ */
+
 public class UserModel {
 
     private String username;
