@@ -15,7 +15,6 @@ public class activity_register extends AppCompatActivity {
     private EditText edtuname;
     private EditText edtpw;
     private EditText edtrepw;
-    private EditText edtphone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +35,6 @@ public class activity_register extends AppCompatActivity {
         edtuname = findViewById(R.id.regis_uname);
         edtpw = findViewById(R.id.regis_pw);
         edtrepw = findViewById(R.id.regis_repw);
-        edtphone = findViewById(R.id.phone);
     }
 
     private void validasiRegister(){
@@ -50,7 +48,6 @@ public class activity_register extends AppCompatActivity {
         String userName = edtuname.getText().toString();
         String password = edtpw.getText().toString();
         String rePassword = edtrepw.getText().toString();
-        String phoneNumber = edtphone.getText().toString();
 
         if(TextUtils.isEmpty(userName)){
             edtuname.setError("Harus diisi");
@@ -78,7 +75,6 @@ public class activity_register extends AppCompatActivity {
             UserModel userModel = new UserModel();
             userModel.setUsername(userName);
             userModel.setPassword(password);
-            userModel.setPhone(phoneNumber);
 
             Preferences.setUserPreferences(getBaseContext(),userModel);
             Preferences.setLoggedInStatus(getBaseContext(), true);

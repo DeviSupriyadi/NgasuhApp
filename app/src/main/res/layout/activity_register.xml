@@ -34,9 +34,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dm5"
-            android:layout_gravity="center"
             android:text="@string/siap"
             android:textColor="@color/putih"
+            android:gravity="center"
             android:textSize="@dimen/dm14"/>
     </LinearLayout>
 
@@ -135,27 +135,6 @@
             android:textColorHint="@color/putih"
             android:textCursorDrawable="@drawable/putihe"
             android:textSize="@dimen/font14"/>
-
-        <EditText
-            android:id="@+id/phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dm50"
-            android:layout_marginLeft="@dimen/dm50"
-            android:layout_marginTop="@dimen/dm10"
-            android:layout_marginEnd="@dimen/dm50"
-            android:layout_marginRight="@dimen/dm50"
-            android:backgroundTint="@color/putih"
-            android:hint="@string/phone"
-            android:imeActionLabel="Sign In"
-            android:imeOptions="actionDone"
-            android:inputType="text|number"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:textColorHint="@color/putih"
-            android:textColor="@color/putih"
-            android:textCursorDrawable="@color/putih"
-            android:textSize="@dimen/font14"/>
     </LinearLayout>
 
     <LinearLayout
@@ -179,6 +158,7 @@
             android:background="@drawable/btn_biruw"
             android:clickable="true"
             android:gravity="center"
+            android:text="@string/daftar"
             android:textColor="@color/putih"
             android:textStyle="bold"/>
     </LinearLayout>

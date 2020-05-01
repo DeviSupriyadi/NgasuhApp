@@ -10,7 +10,6 @@ public class Preferences {
 
     private final static String REGISTER_USERNAME = "REGISTER_USERNAME";
     private final static String REGISTER_PASSWORD = "REGISTER_PASSWORD";
-    private final static String REGISTER_PHONE = "REGISTER_PHONE";
     private final static String LOGIN_STATUS = "LOGIN_STATUS";
 
     private Context context;
@@ -25,7 +24,6 @@ public class Preferences {
 
         editor.putString(REGISTER_USERNAME, userModel.getUsername());
         editor.putString(REGISTER_PASSWORD, userModel.getPassword());
-        editor.putString(REGISTER_PHONE, userModel.getPhone());
         editor.apply();
     }
 
@@ -37,11 +35,6 @@ public class Preferences {
     public static String getRegisteredPassword(Context context) {
         SharedPreferences preferences = context.getSharedPreferences(PREF_SESSION, Context.MODE_PRIVATE);
         return preferences.getString(REGISTER_PASSWORD, UtilStatic.DEFAULT_STRING);
-    }
-
-    public static String getRegisteredPhone(Context context) {
-        SharedPreferences preferences = context.getSharedPreferences(PREF_SESSION, Context.MODE_PRIVATE);
-        return preferences.getString(REGISTER_PHONE, UtilStatic.DEFAULT_STRING);
     }
 
     public static void setLoggedInStatus(Context context, boolean statusLogin) {
