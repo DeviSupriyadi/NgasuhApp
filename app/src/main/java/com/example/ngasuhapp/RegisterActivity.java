@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class activity_register extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     private TextView txtMasuk;
     private EditText edtuname;
@@ -79,7 +79,7 @@ public class activity_register extends AppCompatActivity {
             Preferences.setUserPreferences(getBaseContext(),userModel);
             Preferences.setLoggedInStatus(getBaseContext(), true);
 
-            startActivity(new Intent(getBaseContext(), activity_home.class));
+            startActivity(new Intent(getBaseContext(), HomeActivity.class));
             finish();
         }
     }

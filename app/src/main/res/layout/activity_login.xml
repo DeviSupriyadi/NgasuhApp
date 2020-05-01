@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/biru"
     android:padding="@dimen/dm24"
-    tools:context=".RegisterActivity">
+    tools:context=".LoginActivity">
 
     <LinearLayout
-        android:id="@+id/atase3"
+        android:id="@+id/atas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -34,18 +35,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dm5"
+            android:gravity="center"
             android:text="@string/siap"
             android:textColor="@color/putih"
-            android:gravity="center"
             android:textSize="@dimen/dm14"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/tengahe2"
+        android:id="@+id/tengah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:gravity="center"
+        android:layout_gravity="center"
         android:orientation="vertical">
 
         <TextView
@@ -57,7 +58,7 @@
             android:layout_marginEnd="@dimen/dm50"
             android:layout_marginRight="@dimen/dm50"
             android:gravity="center"
-            android:text="@string/daftar"
+            android:text="@string/login"
             android:textColor="@color/putih"
             android:textSize="@dimen/font16"
             android:textStyle="bold"/>
@@ -74,7 +75,7 @@
             android:background="@color/putih"/>
 
         <EditText
-            android:id="@+id/regis_uname"
+            android:id="@+id/uname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dm50"
@@ -94,7 +95,7 @@
             android:textSize="@dimen/font14"/>
 
         <EditText
-            android:id="@+id/regis_pw"
+            android:id="@+id/pw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dm50"
@@ -106,49 +107,41 @@
             android:hint="@string/pw"
             android:imeActionId="6"
             android:imeActionLabel="Sign In"
-            android:imeOptions="actionNext"
+            android:imeOptions="actionDone"
             android:inputType="textPassword"
             android:maxLines="1"
             android:singleLine="true"
-            android:textColorHint="@color/putih"
             android:textColor="@color/putih"
+            android:textColorHint="@color/putih"
             android:textCursorDrawable="@drawable/putihe"
             android:textSize="@dimen/font14"/>
 
-        <EditText
-            android:id="@+id/regis_repw"
+        <TextView
+            android:id="@+id/forget"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dm50"
             android:layout_marginLeft="@dimen/dm50"
-            android:layout_marginTop="@dimen/dm10"
+            android:layout_marginTop="@dimen/dm12"
             android:layout_marginEnd="@dimen/dm50"
             android:layout_marginRight="@dimen/dm50"
-            android:backgroundTint="@color/putih"
-            android:hint="@string/conf"
-            android:imeOptions="actionNext"
-            android:imeActionLabel="Sign In"
-            android:imeActionId="6"
-            android:inputType="textPassword"
-            android:maxLines="1"
-            android:singleLine="true"
-            android:textColor="@color/putih"
-            android:textColorHint="@color/putih"
-            android:textCursorDrawable="@drawable/putihe"
-            android:textSize="@dimen/font14"/>
+            android:gravity="right"
+            android:text="@string/forget"
+            android:textColor="@color/putih"/>
+
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bawahe2"
+        android:id="@+id/bawah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tengahe2"
+        android:layout_below="@+id/tengah"
         android:layout_alignParentBottom="true"
         android:gravity="bottom"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/reg_in"
+            android:id="@+id/in_login"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dm40"
             android:layout_marginStart="@dimen/dm50"
@@ -159,9 +152,23 @@
             android:background="@drawable/btn_biruw"
             android:clickable="true"
             android:gravity="center"
-            android:text="@string/daftar"
+            android:text="@string/in"
             android:textColor="@color/putih"
             android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/regis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dm50"
+            android:layout_marginLeft="@dimen/dm50"
+            android:layout_marginTop="@dimen/dm12"
+            android:layout_marginEnd="@dimen/dm50"
+            android:layout_marginRight="@dimen/dm50"
+            android:gravity="center_horizontal"
+            android:text="@string/regis"
+            android:textColor="@color/putih"/>
+
     </LinearLayout>
 
 </RelativeLayout>

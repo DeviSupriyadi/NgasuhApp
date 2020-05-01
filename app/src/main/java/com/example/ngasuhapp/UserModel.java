@@ -4,7 +4,6 @@ public class UserModel {
 
     private String username;
     private String password;
-    private String phone;
 
     public String getUsername() {
         return username;

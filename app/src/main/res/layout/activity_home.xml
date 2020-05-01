@@ -8,7 +8,7 @@
     android:background="@color/biru"
     android:orientation="vertical"
     android:padding="@dimen/dm24"
-    tools:context=".activity_home">
+    tools:context=".HomeActivity">
 
     <ImageView
         android:id="@+id/logo"
